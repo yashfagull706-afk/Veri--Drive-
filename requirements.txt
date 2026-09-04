@@ -1,0 +1,17 @@
+# Veri-Drive - Gate Security System
+# ANPR + Face Recognition + Trip Logging + Alarms + Weekly Reports
+
+# ANPR - plate detection and OCR
+easyocr>=1.7.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+
+# Web GUI (dashboard, live gate, registration portal, reports)
+flask>=3.0.0
+
+# Production WSGI server (used automatically when installed; the app
+# falls back to the Flask dev server if it is missing)
+waitress>=2.1.0
+
+# Note: Face recognition uses OpenCV + YuNet (already listed above)
+# No additional face_recognition/dlib dependencies needed.

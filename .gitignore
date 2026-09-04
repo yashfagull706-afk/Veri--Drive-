@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Separate nested web app (has its own .git) - NOT part of this Flask project
+_repo/
+
+# Local auth helper - never commit
+git_login_once.bat
+
+# Runtime data (never commit live databases, biometrics, secrets, or photos)
+data/*.db
+data/*.npz
+data/secret_key.txt
+data/seed_state.json
+data/captures/
+data/drivers/
+data/vehicles/
+data/backups/
+data/test_images/
+data/logs_page_screenshot.png
+*.log
+
+# Note: data/seed/ IS committed on purpose - it holds the pre-registered
+# company driver photos used to seed a fresh install.
