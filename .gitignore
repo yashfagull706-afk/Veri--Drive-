@@ -25,7 +25,16 @@ data/vehicles/
 data/backups/
 data/test_images/
 data/logs_page_screenshot.png
+data/cam_test.jpg
 *.log
 
 # Note: data/seed/ IS committed on purpose - it holds the pre-registered
 # company driver photos used to seed a fresh install.
+
+# HF Space staging: keep the authored deploy files, but ignore the app copies
+# that prepare_space.ps1 stages into deploy/hf-space/ at deploy time.
+deploy/hf-space/*
+!deploy/hf-space/Dockerfile
+!deploy/hf-space/README.md
+!deploy/hf-space/.dockerignore
+!deploy/hf-space/prepare_space.ps1

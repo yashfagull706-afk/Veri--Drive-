@@ -1,0 +1,23 @@
+# Build-context hygiene: keep the image lean and never bake in runtime data.
+__pycache__/
+*.pyc
+*.pyo
+.git/
+.gitignore
+.dockerignore
+Dockerfile
+README.md
+prepare_space.ps1
+
+# Never ship databases, biometrics, secrets, or captured media into the image.
+*.db
+*.npz
+data/backups/
+data/captures/
+data/drivers/
+data/vehicles/
+data/test_images/
+data/secret_key.txt
+data/seed_state.json
+data/logs_page_screenshot.png
+*.log

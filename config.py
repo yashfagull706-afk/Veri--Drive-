@@ -91,7 +91,7 @@ SECRET_KEY_FILE = os.path.join(BASE_DIR, "data", "secret_key.txt")
 # Registration/delete endpoints never send CORS headers, regardless of origin.
 # The Vercel/Cloud Run pages are static demos with no camera or real data.
 CORS_ALLOWED_ORIGINS = [
-    # "https://veri-drive-axwq8hci3-yashfagull706-2265.vercel.app",
+    "https://veri-drive-axwq8hci3-yashfagull706-2265.vercel.app",
 ]
 
 # HTTPS (optional): drop a self-signed cert + key at these paths and the

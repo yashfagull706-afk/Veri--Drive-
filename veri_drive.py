@@ -2047,7 +2047,9 @@ def get_local_ip():
 
 
 if __name__ == "__main__":
-    port = 5000
+    # PORT lets cloud hosts (HF Spaces, Railway, Render, Fly) pick the port;
+    # defaults to 5000 for local runs and LAN use.
+    port = int(os.environ.get("PORT", 5000))
     ip = get_local_ip()
     https = (os.path.exists(config.HTTPS_CERT)
              and os.path.exists(config.HTTPS_KEY))
