@@ -9,6 +9,8 @@
 
 Veri-Drive turns a single ordinary webcam into an intelligent gate guard. It reads each vehicle's **number plate** (ANPR via EasyOCR) and recognizes the **driver's face** (OpenCV YuNet) in real time. The barrier opens **only** when a *registered car* carries a *registered driver*; anything else raises a classified alarm with a captured snapshot. Every entry and exit is logged, searchable, and reportable — with no cloud dependency and no extra hardware.
 
+**Live simulation demo:** <https://veridrive.ai.studio/> — an in-browser interactive simulator of the gate logic (register drivers and cars, simulate dual-factor transits, watch barriers and alarms) for anyone who wants to try the concept without hardware. The full real-time camera system in this repository runs locally as described below.
+
 ---
 
 ## Table of Contents

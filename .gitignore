@@ -38,3 +38,19 @@ deploy/hf-space/*
 !deploy/hf-space/README.md
 !deploy/hf-space/.dockerignore
 !deploy/hf-space/prepare_space.ps1
+
+# Secrets & credentials - never commit (API keys, service accounts, certs,
+# database passwords, provider tokens)
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*service*account*.json
+credentials.json
+client_secrets.json
+*.token
+*.sqlite
+*.sqlite3
+.vercel/
